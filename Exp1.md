@@ -15,11 +15,39 @@ Else
 6.	Return 0
  
 Program:
+```
+#include <stdio.h>
+struct exp{
+    int age;
+    char n[50];
+};
 
-// Type your code here
+int main() {
+    struct exp e[3];
+    int i;
+    for(i=0;i<3;i++){
+       
+        scanf("%d",&e[i].age);
+        scanf("%s",e[i].n);
+    }
+    for(i=0;i<3;i++){
+        printf("Age: %d Name : %s\n",e[i].age,e[i].n);
+        if(e[i].age<=6){
+            printf("Vaccine Eligibility:No\n");
+        }
+        else{
+             printf("Vaccine Eligibility:yes\n");
+        }
+        
+    }
+    
+}
+```
 
 
 Output:
+<img width="623" height="368" alt="image" src="https://github.com/user-attachments/assets/9322a814-fcc5-44c0-ac48-6fb9fd17c5a6" />
+
 
 // paste the output screenshot
 
